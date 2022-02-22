@@ -223,6 +223,7 @@ const goToGoogle = () => {
                                                         const obj = {
                                                             id: category.querySelector('div[data-section-id]').getAttribute('data-section-id').split('/')[1],
                                                             name: category.querySelector('div[data-section-id]').innerText,
+                                                            active: true,
                                                             items: []
                                                         }
                         
@@ -238,7 +239,8 @@ const goToGoogle = () => {
                                                                 price: div.querySelector('.IS0mV').innerText.replace('$',''),
                                                                 description: div.querySelector('.eiW92e').innerText,
                                                                 priceCurrency: "USD",
-                                                                modifiers: []
+                                                                modifiers: [],
+                                                                options: []
                                                             })
                                                         })
                         
