@@ -1,5 +1,5 @@
 # Google-restaurants
-Web scraper for Google restaurants in food.google.com
+Web scraper for Google restaurants in food.google.com using Puppeteer
 
 ## Requirements
 node >= 16.14.0
