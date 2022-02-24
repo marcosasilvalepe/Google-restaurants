@@ -1,3 +1,5 @@
+const headlessBrowser = false; //CHANGE TO TRUE FOR HEADLESS BROWSER
+
 const puppeteer = require('puppeteer');
 const main_url = "https://food.google.com/?ius=true&fo_m=EgwSAggCegYgASoCVVM&orderType=2&q&sei=CbPceXZpR3CSESP7-jBeMwbY&utm_campaign&utm_source=landing";
 const fs = require('fs');
@@ -17,7 +19,7 @@ const goToGoogle = () => {
     return new Promise(async (resolve, reject) => {
         try {
 
-            const browser = await puppeteer.launch({headless: false}); // default is true
+            const browser = await puppeteer.launch({headless: headlessBrowser});
             const page = await browser.newPage();
             page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36');
 
