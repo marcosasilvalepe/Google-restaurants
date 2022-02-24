@@ -6,6 +6,6 @@ node >= 16.14.0
 npm >= 8.3.1
 
 ## Usage
-Install all dependencies with `npm install`
+Inside the folder from terminal install all dependencies with `npm install`
 
 From terminal run `node restaurants.js`
